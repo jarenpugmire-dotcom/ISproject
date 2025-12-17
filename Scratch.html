@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scratch Page - Chess</title>
+
+ 
+  <link rel="stylesheet" href="../Styles/stylessheet.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <!--  div #1 (header block) -->
+    <div class="header" id="top">
+      <h1>My Scratch Page: Chess</h1>
+      <p class="subtitle">
+        Built from a blank HTML file. Styled with my own CSS. Topic: chess strategy + why I love the game.
+      </p>
+
+      <!--  Navigation back to professional-looking pages -->
+      <div class="nav">
+        <a href="Jaren'sresume.html">Resume</a>
+        <a href="Myapp.html">My Web App</a>
+        <a href="../index.html">Professional Site</a>
+        <a href="#video">Jump to YouTube</a>     <!--  on-page anchor -->
+        <a href="#tableau">Jump to Tableau</a>   <!--  on-page anchor -->
+      </div>
+    </div>
+
+    <!--  div #2 (content block) -->
+    <div class="content">
+      <h2>Why chess is fascinating</h2>
+      <p>
+        Chess is a mix of pattern recognition, calculation, and psychology. I like it because every game is different,
+        and improvement is measurable over time. I also enjoy the Challenge of working outside of the box to come to solution.
+      </p>
+
+      <h2>Chess Improvement Gameplan </h2>
+
+      <!--  ordered list containing unordered list -->
+      <ol>
+        <li>Immediate action 
+          <ul>
+            <li>Play slower games to reduce blunders</li>
+            <li>Review every loss and write 1 lesson</li>
+            <li>Explore new openings</li>
+          </ul>
+        </li>
+        <li>Play in a chess tournament</li>
+        <li>Get to 1500 ELO</li>
+      </ol>
+
+      <h2>Image requirement</h2>
+      
+
+      <!--  at least one image not from Bootstrap -->
+      <img class="photo" src="../Images/Chess.jpg" alt="Chess board">
+
+      <p class="backTop"><a href="#top">Back to top</a></p>
+    </div>
+
+    <!--  div #3 (YouTube block) -->
+    <div class="content" id="video">
+      <h2>Embedded YouTube video</h2>
+      <p>
+        <!-- This is an embedded YouTube video (rubric requirement). Swap the video if you want. -->
+      </p>
+
+      
+      <div class="videoBox">
+        <iframe
+          src="https://www.youtube.com/embed/Ao9iOeK_jvU"
+          title="Chess YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p class="backTop"><a href="#top">Back to top</a></p>
+    </div>
+
+    
+    <div class="content" id="tableau">
+  <h2>Live Tableau visualization</h2>
+  <p>Interactive chess openings dashboard from Tableau Public:</p>
+
+  <div class="tableauPlaceholder" id="viz1700000000000" style="position: relative">
+    <noscript>
+      <a href="https://public.tableau.com/views/ChessOpenings_15826655703000/Dashboard1">
+        <img alt="Tableau Chess Openings"
+             src="https://public.tableau.com/static/images/Ch/ChessOpenings_15826655703000/Dashboard1/1_rss.png"
+             style="border: none" />
+      </a>
+    </noscript>
+    <object class="tableauViz" style="display:none;">
+      <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+      <param name="embed_code_version" value="3" />
+      <param name="site_root" value="" />
+      <param name="name" value="ChessOpenings_15826655703000/Dashboard1" />
+      <param name="tabs" value="no" />
+      <param name="toolbar" value="yes" />
+      <param name="static_image"
+             value="https://public.tableau.com/static/images/Ch/ChessOpenings_15826655703000/Dashboard1/1.png" />
+      <param name="animate_transition" value="yes" />
+      <param name="display_static_image" value="yes" />
+      <param name="display_spinner" value="yes" />
+      <param name="display_overlay" value="yes" />
+      <param name="display_count" value="yes" />
+      <param name="language" value="en-US" />
+    </object>
+  </div>
+
+  <script type="text/javascript">
+    var divElement = document.getElementById("viz1700000000000");
+    var vizElement = divElement.getElementsByTagName("object")[0];
+    vizElement.style.width = "100%";
+    vizElement.style.height = "700px"; /* adjust height if needed */
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <p class="backTop"><a href="#top">Back to top</a></p>
+</div>
+
